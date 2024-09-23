@@ -18,43 +18,49 @@
             <Button 
                 Text="RZUĆ KOŚĆMI"
                 BackgroundColor="Chocolate"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="DiceRoll"/>
             <FlexLayout
+               x:Name="FlexContainer"
                 Direction="Row">
                 <Image
+                    x:Name="Dice0"
                     FlexLayout.Basis="20%"
                     Source="k6_0.png" />
                 <Image
-    
-                    FlexLayout.Basis="20%"
-    
-                    Source="k6_0.png" />
-                <Image
-   
+                    x:Name="Dice1"
                     FlexLayout.Basis="20%"
     
                     Source="k6_0.png" />
                 <Image
-    
+                    x:Name="Dice2"
                     FlexLayout.Basis="20%"
     
                     Source="k6_0.png" />
                 <Image
+                    x:Name="Dice3"
+                    FlexLayout.Basis="20%"
     
+                    Source="k6_0.png" />
+                <Image
+                    x:Name="Dice4"
                     FlexLayout.Basis="20%"
     
                     Source="k6_0.png" />
             </FlexLayout>
             <Label
+                x:Name="RollResultLabel"
                 Text="Wynik tego losowania: 0"
                 HorizontalOptions="Center"/>
             <Label
+                x:Name="GameResultLabel"
                 Text="Wynik gry: 0"
                 HorizontalOptions="Center"/>
             <Button
                 Text="RESETUJ WYNIK"
                 BackgroundColor="Chocolate"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="ResetGame"/>
         </VerticalStackLayout>
     </ScrollView>
 
